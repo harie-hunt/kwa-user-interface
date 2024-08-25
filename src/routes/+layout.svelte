@@ -2,10 +2,14 @@
 	import '../app.css';
 </script>
 
-<slot/>
+<svelte:head>
+	<title>Koperasi Wanita Anggrek</title>
+</svelte:head>
+
+<slot />
 
 <style lang="postcss">
 	:global(body) {
-		@apply text-gray-700 bg-slate-100 dark:bg-black dark:text-neutral-200;
+		@apply bg-slate-100 text-gray-700 dark:bg-black dark:text-neutral-200;
 	}
 </style>
